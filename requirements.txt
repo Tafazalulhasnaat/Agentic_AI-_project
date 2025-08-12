@@ -1,0 +1,9 @@
+# Python version: 3.13.2
+fastapi
+uvicorn
+requests
+langchain-core
+langchain-google-genai
+langgraph
+python-multipart
+python-dotenv

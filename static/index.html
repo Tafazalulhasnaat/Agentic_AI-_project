@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nexus Voice Coach | AI-Powered Training</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Floating particles background -->
+  <div class="particles" id="particles"></div>
+  
+  <div class="container">
+    <div class="tech-border top"></div>
+    <div class="tech-border bottom"></div>
+    
+    <header>
+      <h1>AI Text&VOICE Assistant</h1>
+      <p>Your next-generation AI-powered Text&voice Assistant</p>
+    </header>
+
+    <div class="chat-box" id="chat-box">
+      <div class="message ai" style="animation-delay: 0.2s; opacity: 1; transform: translateY(0);">
+        <div class="avatar">
+          <i class="fas fa-robot"></i>
+        </div>
+        <div class="bubble">
+          Welcome to AI Voice& text! I'm your AI assistant. 
+          <br><br>
+          You can speak with me using the voice button or type your message. I'll help you.
+          <div class="message-time">SYSTEM INITIALIZED</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="control-group">
+        <button id="record-btn" class="mic-button" type="button">
+          <span class="pulse"></span>
+          <i class="fas fa-microphone"></i> VOICE INPUT
+        </button>
+        <div class="text-input-group">
+          <input type="text" id="text-input" placeholder="Enter your training query..." />
+          <button id="send-btn" type="button">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+      <div class="status-bar" id="status">
+        <i class="fas fa-satellite-dish"></i> SYSTEM STANDBY - READY FOR INPUT
+      </div>
+    </div>
+  </div>
+
+  <div class="particle-effect" id="particle-effect"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
