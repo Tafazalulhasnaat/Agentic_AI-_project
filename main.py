@@ -7,14 +7,10 @@ from langchain_core.tools import tool
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langgraph.graph import StateGraph, START, END
 from dotenv import load_dotenv
-#load_dotenv()
-GOOGLE_API_KEY = "AIzaSyBiw1eX6m5MvkpiUiygwxeewp0lw9p3wTA"
-OPENWEATHER_API_KEY = "b88c2e4b42bbadc19d30bac06bc69c67"
-EXCHANGE_API_KEY = "1fdb9d9851a2dfc462491a59"
-
-#GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-#OPENWEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY")
-#EXCHANGE_API_KEY = os.getenv("EXCHANGE_API_KEY")
+load_dotenv()
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+OPENWEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY")
+EXCHANGE_API_KEY = os.getenv("EXCHANGE_API_KEY")
 
 
 
