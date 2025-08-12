@@ -175,7 +175,7 @@ async function handleTextSubmit() {
   chatHistory.push({ role: 'user', content: text });
 
   try {
-    const res = await fetch("http://localhost:8000/ask", {
+    const res = await fetch("https://agentic-ai-project-tqw8.onrender.com/ask", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams({ text })
